@@ -14,3 +14,44 @@ function FizzBuzz (hoge) {
     }
    }
 </script>
+
+<script>
+function FizzBuzz (hoge) {
+ var i;
+ for (i = 1; i <= hoge; i++) {
+  if (i % 3 == 0) {
+   if (i % 5 == 0) {
+    alert('FizzBuzz');
+   } else {
+    alert('Fizz');
+   }
+  } else if (i % 5 == 0) {
+   if (i % 3 == 0) {
+    alert('FizzBuzz');
+   } else {
+    alert('Buzz');
+   }
+  } else {
+   alert(i);
+  }
+ }
+}
+</script>
+
+<script>
+function FizzBuzz (hoge) {
+ var i;
+ for (i = 1; i <= hoge; i++) {
+  alert(i % 3 == 0 ? (i % 5 == 0 ? 'FizzBuzz' : 'Fizz') : (i % 5 == 0 ? 'Buzz' : i));
+ }
+}
+</script>
+
+<script>
+function FizzBuzz (hoge) {
+ var i;
+ for (i = 1; i <= hoge; i++) {
+  alert((i % 3 == 0 ? 'Fizz' : '') + (i % 5 == 0 ? 'Buzz' : '') || i);
+ }
+}
+</script>
