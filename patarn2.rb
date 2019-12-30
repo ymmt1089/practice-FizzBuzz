@@ -1,5 +1,5 @@
 num = 1
-while num <= 30 
+while num <= 30
   str = ""
   if num % 3 == 0
     str = str + "fizz"
